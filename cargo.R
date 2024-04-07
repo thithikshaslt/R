@@ -1,7 +1,7 @@
 # Define the weights and values of the items and the capacity of the cargo
- weights <- c(2, 3, 1)
- revenue <- c(31, 47, 14)
- capacity <- 2
+weights <- c(2, 3, 1)
+revenue <- c(31, 47, 14)
+capacity <- 2
 
 # Define the weights and values of the items and the capacity of the cargo
 #weights <- as.numeric(strsplit(readline(prompt="Enter the weights of the items (comma-separated): "), ",")[[1]])
@@ -12,7 +12,7 @@
 dp <- matrix(0, length(weights) + 1, capacity + 1)
 
 # Fill the dynamic programming table
-for (i in 1:length(weights)) 
+for (i in 1 : length( weights ) ) 
 {
   for (j in 0:capacity) 
   {
